@@ -1,3 +1,6 @@
+.Container {
+  margin: 0px 8rem;
+}
 .Todo-Header {
   text-align: center;
 }
@@ -18,7 +21,7 @@
 .Todo__Input {
   width: 59%;
   border-radius: 5px;
-  height: 2rem;
+  height: 2.5rem;
   border: 2px solid gray;
 }
 .Input__Icon {
@@ -31,10 +34,11 @@
 }
 
 .Btn {
-  background-color: rgb(64, 135, 241);
+  background-color: green;
   border-radius: 5px;
-  margin: 1rem 0px 2rem 12rem;
-  padding: 0.7rem 18.7rem;
+  margin: 1rem 0px 2rem 8.5rem;
+  padding: 0.7rem;
+  width: 65%;
   color: white;
   border: none;
   cursor: pointer;
@@ -47,17 +51,17 @@
   display: flex;
   border: 1px solid gray;
   margin: 0px 10rem;
-  padding: 0.5rem 5rem;
+  padding: 0.2rem 5rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .Clear__List {
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: red;
   margin: 2rem 10rem;
   text-align: center;
   color: white;
-  width: 77%;
+  width: 70%;
   border-radius: 5px;
 }
