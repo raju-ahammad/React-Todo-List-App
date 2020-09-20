@@ -1,26 +1,29 @@
-import React, { Component } from 'react'
 
-class TodoInput extends Component {
-    render() {
-        return (
-            <div>
-                <h1 class="Todo-Header">Todo Input</h1>
-                <div class="Input__Section">
-                    <div class="Todo__Flex">
+import React from 'react';
+
+const TodoInput = ({ item, handleChange, handleSubmit }) => {
+    return (
+        <div>
+            <h1 className="Todo-Header">Todo Input</h1>
+            <div className="Input__Section">
+                <form onSubmit={handleSubmit}>
+                    <div className="Todo__Flex">
                         <i className="fas fa-book Input__Icon"></i>
                         <input
                             placeholder="Add A Todo Item"
-                            class="Todo__Input"
+                            className="Todo__Input"
                             type="text"
+                            value={item}
+                            onChange={handleChange}
                         />
                     </div>
-                    <div class="Button__section">
-                        <button class="Btn">Add Item</button>
+                    <div className="Button__section">
+                        <button type="submit" className="Btn">Add Item</button>
                     </div>
-                </div>
+                </form>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
-export default TodoInput
+export default TodoInput;
