@@ -4,7 +4,7 @@ import TodoItem from './TodoItem'
 
 
 
-const TodoList = ({ items }) => {
+const TodoList = ({ items, clearList }) => {
     return (
         <section className="TodoList__Section">
             <h1 className="Todo-Header">Todo Input</h1>
@@ -13,7 +13,7 @@ const TodoList = ({ items }) => {
                    return  <TodoItem key={item.id} title={item.title} />
                 })
             }
-            <button className="Clear__List">Clear List</button>
+            <button className="Clear__List"  onClick={clearList}>Clear List</button>
         </section>
     )
 }
