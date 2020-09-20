@@ -27,14 +27,15 @@
 .Input__Icon {
   background-color: rgb(64, 135, 241);
   padding: 0.5rem;
+  color: white;
 }
 
 .Button__section {
   /* margin: 1rem 6.2rem; */
 }
 
-.Btn {
-  background-color: green;
+.Btn_Success {
+  background-color: rgb(13, 137, 219);
   border-radius: 5px;
   margin: 1rem 0px 2rem 10rem;
   padding: 0.7rem;
@@ -44,13 +45,23 @@
   cursor: pointer;
 }
 
+.Btn_Green {
+  background-color: green;
+  border-radius: 5px;
+  margin: 1rem 0px 2rem 10rem;
+  padding: 0.7rem;
+  width: 60%;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 /* *******************************************
             Todo List Section
 *******************************************             */
 .TodoList__Box {
   display: flex;
   border: 1px solid gray;
-  margin: 0px 10rem;
+  margin: 5px 10rem;
   padding: 0.2rem 5rem;
   justify-content: space-between;
   align-items: center;

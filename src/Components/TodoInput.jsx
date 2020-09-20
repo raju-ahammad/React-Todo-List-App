@@ -1,7 +1,8 @@
 
+import className from "classnames";
 import React from 'react';
 
-const TodoInput = ({ item, handleChange, handleSubmit }) => {
+const TodoInput = ({ item, handleChange, handleSubmit, editItem }) => {
     return (
         <div>
             <h1 className="Todo-Header">Todo Input</h1>
@@ -17,8 +18,8 @@ const TodoInput = ({ item, handleChange, handleSubmit }) => {
                             onChange={handleChange}
                         />
                     </div>
-                    <div className="Button__section">
-                        <button type="submit" className="Btn">Add Item</button>
+                    <div className={className("Button__section")}>
+                        <button type="submit" className={ editItem ? className("Btn_Green"): className("Btn_Success") }> { editItem ? "edit item": "add item" } </button>
                     </div>
                 </form>
             </div>
